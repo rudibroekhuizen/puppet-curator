@@ -3,12 +3,12 @@
 class curator::install {
 
   Install Pip
-  package { python-pip:
+  package { 'python-pip':
     ensure => present,
   }
 
   # Install Curator
-  package { curator:
+  package { 'curator':
     ensure   => $curator::version,
     provider => pip,
     require  => Package['python-pip'],
