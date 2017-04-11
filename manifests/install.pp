@@ -2,7 +2,7 @@
 #
 class curator::install {
 
-  Install Pip
+  # Install Pip
   package { 'python-pip':
     ensure => present,
   }
