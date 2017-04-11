@@ -8,7 +8,7 @@ class curator::install {
   }
 
   # Install Curator
-  package { 'curator':
+  package { 'elasticsearch-curator':
     ensure   => $curator::version,
     provider => pip,
     require  => Package['python-pip'],
