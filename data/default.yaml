@@ -1,4 +1,4 @@
-role_elasticsearch::actions_yml:
+curator::actions_yml:
   actions:
     1:
       action: delete_indices
