@@ -39,6 +39,7 @@ class curator (
   String $version = '4.2.6',
 ) {
 
-  class { '::curator::install': }
+  class { '::curator::install': } ->
+  class { '::curator::actions': }
 
 }
