@@ -13,5 +13,10 @@ class curator::install {
     provider => pip,
     require  => Package['python-pip'],
   }
-  
+
+  # Create .curator directory for curator yaml files
+  file { '/root/.curator':
+    ensure => 'directory',
+  }
+
 }
