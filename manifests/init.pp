@@ -37,7 +37,7 @@
 #
 class curator (
   String $version,
-  Hash $actions_yaml = {},
+  Hash $actions_yml = {},
 ) {
 
   class { '::curator::install': } ->
