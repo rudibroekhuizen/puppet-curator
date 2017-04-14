@@ -36,7 +36,7 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class curator (
-  String $version = '4.2.6',
+  String $version,
 ) {
 
   class { '::curator::install': } ->
