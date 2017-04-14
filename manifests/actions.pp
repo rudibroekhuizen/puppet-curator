@@ -8,9 +8,10 @@ class curator::actions {
 
   # Configure actions.yml file using https://github.com/cataphract/puppet-yaml_settings module
   yaml_settings { '/root/.curator/actions.yml':
-    values => $curator::actions_yml,
+    values  => $curator::actions_yml,
+    require => File['/root/.curator']
   }
-  
+
   # Schedule curator
   cron { "curator_run":
     ensure  => 'present',
@@ -19,5 +20,5 @@ class curator::actions {
     minute  => 10,
     weekday => '*',
   }
-  
+
 }
