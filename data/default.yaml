@@ -1,3 +1,4 @@
+curator::version: '4.2.6'
 curator::actions_yml:
   actions:
     1:
