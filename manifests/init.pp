@@ -41,6 +41,7 @@ class curator (
 ) {
 
   class { '::curator::install': } ->
+  class { '::curator::config': } ->
   class { '::curator::actions': }
-
+  
 }
