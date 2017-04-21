@@ -29,11 +29,11 @@
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Author Name <rudi.broekhuizen@naturalis.nl>
 #
 # === Copyright
 #
-# Copyright 2017 Your name here, unless otherwise noted.
+# Copyright 2017 Rudi Broekhuizen
 #
 class curator (
   String $version,
